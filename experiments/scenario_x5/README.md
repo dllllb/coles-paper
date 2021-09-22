@@ -18,4 +18,7 @@ export SC_DEVICE="cuda"
 
 sh bin/run_all_scenarios.sh
 
+# check the results
+cat results/*.txt
+cat results/*.csv
 ```
