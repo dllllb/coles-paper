@@ -306,25 +306,6 @@ def test_trx_avg_encoder():
     assert out.size()[0] == 12
 
 
-def test_timestep_shuffle():
-    t = torch.tensor([
-        [[0, 0], [1, 2], [3, 4], [0, 0]],
-        [[0, 0], [10, 11], [0, 0], [0, 0]],
-    ])
-
-    res = TimeStepShuffle()(PaddedBatch(t, [2, 1]))
-
-    assert res.payload.shape == (2, 4, 2)
-
-
-def test_skip_step_encoder():
-    t = torch.arange(8*11*2).view(8, 11, 2)
-
-    res = SkipStepEncoder(3)(PaddedBatch(t, [10, 9, 8, 7, 3, 2, 1, 0]))
-
-    assert res.payload.shape == (8, 4, 2)
-
-
 def test_transf_seq_encoder():
     config = {
         'transf': {
@@ -334,7 +315,9 @@ def test_transf_seq_encoder():
             'n_layers': 2,
             'max_seq_len': 200,
             'use_after_mask': True,
+            'train_starter': True,
             'use_positional_encoding': True,
+            'use_src_key_padding_mask': False,
             'sum_output': True,
             'input_size': 32,
             'shared_layers': False,
