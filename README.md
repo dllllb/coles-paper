@@ -21,16 +21,12 @@ luigid
 ```
 
 # Run scenario
-
-```sh
-# We check 5 datasets as separate experiments. See `README.md` files in experiments folder:
-#      experiments/scenario_age_pred/README.md
-#      experiments/scenario_bowl2019/README.md
-#      experiments/scenario_gender/README.md
-#      experiments/scenario_rosbank/README.md
-#      experiments/scenario_x5/README.md
-
-```
+ We check 5 datasets as separate experiments. See `README.md` files in experiments folder:
+ - [Age](experiments/scenario_age_pred/README.md)
+ - [Churn](experiments/scenario_rosbank/README.md)
+ - [Assess](experiments/scenario_bowl2019/README.md)
+ - [Retail](experiments/scenario_x5/README.md)
+ - [Small demo dataset](experiments/scenario_gender/README.md)
 
 # Final results
 ```
