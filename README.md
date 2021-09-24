@@ -8,10 +8,6 @@ pip3 install pipenv
 
 pipenv install --dev
 pipenv shell
-pip install pyspark==3.1.2
-pip install "git+ssh://git@github.com/sberbank-ai-lab/embeddings-valid.git@0.0.1"
-
-
 pytest
 
 # run luigi server
