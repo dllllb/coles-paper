@@ -6,12 +6,8 @@
 sudo apt install python3.8 python3-venv
 pip3 install pipenv
 
-pipenv install --dev
+pipenv sync  # install packages exactly as specified in Pipfile.lock
 pipenv shell
-pip install pyspark==3.1.2
-pip install "git+ssh://git@github.com/sberbank-ai-lab/embeddings-valid.git@0.0.1"
-
-
 pytest
 
 # run luigi server
