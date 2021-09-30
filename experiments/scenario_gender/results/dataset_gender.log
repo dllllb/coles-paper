@@ -1,4 +1,4 @@
-load_source_data       : Loaded 6849346 rows from "/mnt/data/ovsov/repo/dltranz/data/gender/transactions.csv"
+load_source_data       : Loaded 6849346 rows from "/mnt/data/anonimous/repo/dltranz/data/gender/transactions.csv"
 load_source_data       : Loaded 6849346 rows in total
 trx_to_features        : Found 15000 unique clients
 _init_num_threads      : Note: NumExpr detected 24 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
@@ -79,6 +79,6 @@ update_with_target     : Target loaded for 8400 clients
 update_with_target     : Target updated for 15000 clients
 split_dataset          : Train size: 14160 clients
 split_dataset          : Test size: 840 clients
-save_features          : Saved to: "/mnt/data/ovsov/repo/dltranz/data/gender/train_trx.p"
-save_features          : Saved to: "/mnt/data/ovsov/repo/dltranz/data/gender/test_trx.p"
+save_features          : Saved to: "/mnt/data/anonimous/repo/dltranz/data/gender/train_trx.p"
+save_features          : Saved to: "/mnt/data/anonimous/repo/dltranz/data/gender/test_trx.p"
 <module>               : Data collected in 65 sec (0:01:05.637641)

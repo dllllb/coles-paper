@@ -6,11 +6,11 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
     
 setuptools.setup(
-    name='pytorch-lifestream',
-    version='0.1.1',
-    author='Dmitri Babaev',
-    author_email='dmitri.babaev@gmail.com',
-    description='Llifestream data anaysis with PyTorch',
+    name="embeddings-validation",
+    version="0.0.1",
+    author="anonymous",
+    author_email="anonymous",
+    description="Lifestream data analysis with PyTorch",
     long_description=long_description,
     long_description_content_type="text/markdown",
     packages=setuptools.find_packages(),
