@@ -257,9 +257,8 @@
             "version": "==0.17.1"
         },
         "embeddings-validation": {
-            "editable": true,
-            "git": "ssh://git@github.com/sberbank-ai-lab/embeddings-valid.git",
-            "ref": "568359688b55a6ae650b93343911421cccadb1e2"
+            "path": ".",
+            "version": "==0.0.1"
         },
         "entrypoints": {
             "hashes": [
