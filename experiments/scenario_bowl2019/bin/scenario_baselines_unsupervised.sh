@@ -25,5 +25,5 @@ python ../../ml_inference.py params.device="$SC_DEVICE" --conf conf/dataset.hoco
 # Compare
 rm results/scenario_bowl2019_baselines_unsupervised.txt
 # rm -r conf/embeddings_validation.work/
-LUIGI_CONFIG_PATH=conf/luigi.cfg python -m embeddings_validation \
+PYTHONPATH=../.. LUIGI_CONFIG_PATH=conf/luigi.cfg python -m embeddings_validation \
     --conf conf/embeddings_validation_baselines_unsupervised.hocon --workers 10 --total_cpu_count 20
