@@ -2,11 +2,13 @@
 
 The code is tested on Ubuntu Linux 18.04.5 LTS server with NVIDIA Tesla P100 GPU. It should also work on any modern Linux with modern NVIDIA Tesla GPU.
 
-Churn and Accessment experiments require around 1 day to complete
+Churn dataset experiments require around 1 day to complete.
 
-Age prediction dataset experiments require around 3 days to complete
+Assessment dataset experiments require around 1 day to complete.
 
-Retail dataset experiments - require around 7 days to complete
+Age prediction dataset experiments require around 3 days to complete.
+
+Retail dataset experiments - require around 7 days to complete.
 
 # 1. Setup using pipenv
 
@@ -69,7 +71,7 @@ cat results/*.csv
 cd ../..
 ```
 
-# 4. Accessment dataset
+# 4. Assessment dataset
 
  ```sh
 cd experiments/scenario_bowl2019
