@@ -20,7 +20,7 @@ Retail dataset experiments - require around 7 days to complete.
 sudo apt install python3.8 python3-venv
 pip3 install pipenv
 
-pipenv sync --dev  # install packages exactly as specified in Pipfile.lock
+pipenv sync # install packages exactly as specified in Pipfile.lock
 pipenv shell # activate virtual environment
 
 # run luigi server
