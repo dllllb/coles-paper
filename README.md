@@ -1,5 +1,7 @@
 This repository contains the experiment code from the [COLES](https://doi.org/10.1145/3514221.3526129) paper
 
+We also have [pytorch-lifestream](https://github.com/dllllb/pytorch-lifestream) library, which privide a more simple way to use `COLES` and other methods for event sequience analysis in production.
+
 # Prerequisites
 
 The code is tested on Ubuntu Linux 18.04.5 LTS server with NVIDIA Tesla P100 GPU. It should also work on any modern Linux with modern NVIDIA Tesla GPU.
