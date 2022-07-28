@@ -117,6 +117,6 @@ Raw result files are stored in `experiments/*/results` folder. Current results a
 
 [RNN hidden size figures](experiments/notebooks/hidden_size_figures.ipynb): figure 3 from the paper is produced by this notebook
 
-[Periodicity and repeatability of the data figures](experiments/notebooks/kl_cyclostationary.ipynb): figure 2 from the paper is produced by this notebook
+[Periodicity and repeatability of the data figures](experiments/notebooks/kl_cyclostationarity.ipynb): figure 2 from the paper is produced by this notebook
 
 [Model quality for different dataset sizes figures](experiments/notebooks/semi_supervised_figures.ipynb): figure 4 from the paper is produced by this notebook
