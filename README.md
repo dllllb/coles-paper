@@ -27,7 +27,13 @@ luigid
 # optionally check embedding validation progress at `http://localhost:8082/`
 ```
 
-# 2. Age prediction dataset
+# 2. Install LaTeX packages for plot generation
+
+```sh
+sudo apt-get install dvipng texlive-latex-extra texlive-fonts-recommended cm-super
+```
+
+# 3. Age prediction dataset experiments
 
 ```sh
 cd experiments/scenario_age_pred
@@ -39,17 +45,14 @@ bin/get-data.sh
 bin/make-datasets-spark.sh
 
 export SC_DEVICE="cuda"
-
+# run experiments
 sh bin/run_all_scenarios.sh
 
-# check the results
-cat results/*.txt
-cat results/*.csv
-
+# optionally return to the project root
 cd ../..
 ```
 
-# 3. Churn dataset
+# 4. Churn dataset experiments
 
 ```sh
 cd experiments/scenario_rosbank
@@ -61,17 +64,14 @@ bin/get-data.sh
 bin/make-datasets-spark.sh
 
 export SC_DEVICE="cuda"
-
+# run experiments
 sh bin/run_all_scenarios.sh
 
-# check the results
-cat results/*.txt
-cat results/*.csv
-
+# optionally return to the project root
 cd ../..
 ```
 
-# 4. Assessment dataset
+# 5. Assessment dataset experiments
 
  ```sh
 cd experiments/scenario_bowl2019
@@ -83,17 +83,14 @@ bin/get-data.sh
 bin/make-datasets-spark.sh
 
 export SC_DEVICE="cuda"
-
+# run experiments
 sh bin/run_all_scenarios.sh
 
-# check the results
-cat results/*.txt
-cat results/*.csv
-
+# optionally return to the project root
 cd ../..
 ```
 
-# 5. Retail dataset
+# 6. Retail dataset experiments
 
 ```sh
 cd experiments/scenario_x5
@@ -105,16 +102,21 @@ bin/get-data.sh
 bin/make-datasets-spark.sh
 
 export SC_DEVICE="cuda"
-
+# run experiments
 sh bin/run_all_scenarios.sh
 
-# check the results
-cat results/*.txt
-cat results/*.csv
-
+# optionally return to the project root
 cd ../..
 ```
 
-# 6. Results
+# 8. Results
 
-All results are stored in `experiments/*/results` folder.
+Raw result files are stored in `experiments/*/results` folder. Current results are cached in Git, final tables and plots can be generated without full experiment run.
+
+[Tables from paper](experiments/notebooks/collect_tables.ipynb): tables 2, 3, 4, 5, 6, 7 from the paper that compare model quality metrics are produced by this notebook
+
+[RNN hidden size figures](experiments/notebooks/hidden_size_figures.ipynb): figure 3 from the paper is produced by this notebook
+
+[Periodicity and repeatability of the data figures](experiments/notebooks/kl_cyclostationary.ipynb): figure 2 from the paper is produced by this notebook
+
+[Model quality for different dataset sizes figures](experiments/notebooks/semi_supervised_figures.ipynb): figure 4 from the paper is produced by this notebook
