@@ -120,3 +120,5 @@ Raw result files are stored in `experiments/*/results` folder. Current results a
 [Periodicity and repeatability of the data figures](experiments/notebooks/kl_cyclostationarity.ipynb): figure 2 from the paper is produced by this notebook
 
 [Model quality for different dataset sizes figures](experiments/notebooks/semi_supervised_figures.ipynb): figure 4 from the paper is produced by this notebook
+
+Experiments on scoring dataset, shown in table 6, were performed on diffrent code base. They are not available in this repository. Experiments from table 11 were performed on in-house datasets. They are also not available in this repository.
