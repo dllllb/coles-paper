@@ -1,3 +1,5 @@
+This repository contains the experiment code from the [COLES](https://doi.org/10.1145/3514221.3526129) paper
+
 # Prerequisites
 
 The code is tested on Ubuntu Linux 18.04.5 LTS server with NVIDIA Tesla P100 GPU. It should also work on any modern Linux with modern NVIDIA Tesla GPU.
@@ -109,7 +111,7 @@ sh bin/run_all_scenarios.sh
 cd ../..
 ```
 
-# 8. Results
+# 8. Experiment results
 
 Raw result files are stored in `experiments/*/results` folder. Current results are cached in Git, final tables and plots can be generated without full experiment run.
 
