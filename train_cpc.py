@@ -44,9 +44,11 @@ def main(args=None):
         trx_e, rnn_e = cpc_e.trx_encoder, cpc_e.seq_encoder
         l = LastStepEncoder()
         enc_agr_model = torch.nn.Sequential(trx_e, rnn_e, l)
-
-        torch.save(enc_agr_model, conf['model_path.model'])
-        logger.info(f'Model saved to "{conf["model_path.model"]}"')
+        save_dir = conf['model_path.model']
+        os.makedirs(save_dir, exist_ok=True)
+        
+        torch.save(enc_agr_model, save_dir)
+        logger.info(f'Model saved to "{save_dir}"')
 
 
 if __name__ == '__main__':
