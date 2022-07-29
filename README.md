@@ -14,6 +14,8 @@ Age prediction dataset experiments require around 3 days to complete.
 
 Retail dataset experiments - require around 7 days to complete.
 
+It is possible to run different experiments on different GPU cards by using `SC_DEVICE` environment variable, e. g. `export SC_DEVICE="cuda:0"`.
+
 # 1. Setup using pipenv
 
 ```sh
