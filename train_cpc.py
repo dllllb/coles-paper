@@ -1,5 +1,6 @@
 import logging
 import torch
+import os
 
 from dltranz.metric_learn.ml_models import ml_model_by_type
 from dltranz.seq_encoder import LastStepEncoder
@@ -44,11 +45,12 @@ def main(args=None):
         trx_e, rnn_e = cpc_e.trx_encoder, cpc_e.seq_encoder
         l = LastStepEncoder()
         enc_agr_model = torch.nn.Sequential(trx_e, rnn_e, l)
-        save_dir = conf['model_path.model']
+
+        save_dir = os.path.dirname(conf['model_path.model'])
         os.makedirs(save_dir, exist_ok=True)
-        
-        torch.save(enc_agr_model, save_dir)
-        logger.info(f'Model saved to "{save_dir}"')
+
+        torch.save(enc_agr_model, conf['model_path.model'])
+        logger.info(f'Model saved to "{conf["model_path.model"]}"')
 
 
 if __name__ == '__main__':

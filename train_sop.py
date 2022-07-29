@@ -87,10 +87,11 @@ def run_experiment(model, conf):
 
         m_encoder = model.base_model[0] if conf['model_path.only_encoder'] else model.base_model
 
-        save_dir = conf['model_path.model']
+        save_dir = os.path.dirname(conf['model_path.model'])
         os.makedirs(save_dir, exist_ok=True)
-        torch.save(m_encoder, save_dir)
-        logger.info(f'Model saved to "{save_dir}"')
+
+        torch.save(m_encoder, conf['model_path.model'])
+        logger.info(f'Model saved to "{conf["model_path.model"]}"')
 
     results = {
         'exec-sec': exec_sec,

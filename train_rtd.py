@@ -91,10 +91,11 @@ def run_experiment(model, conf):
         elif 'transf' in conf['params']:
             m_encoder = torch.nn.Sequential(*model[:-1], MeanStepEncoder())
 
-        save_dir = conf['model_path.model']
+        save_dir = os.path.dirname(conf['model_path.model'])
         os.makedirs(save_dir, exist_ok=True)
-        torch.save(m_encoder, save_dir)
-        logger.info(f'Model saved to "{save_dir}"')
+
+        torch.save(m_encoder, conf['model_path.model'])
+        logger.info(f'Model saved to "{conf["model_path.model"]}"')
 
     results = {
         'exec-sec': exec_sec,

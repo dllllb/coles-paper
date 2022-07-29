@@ -25,10 +25,6 @@ pip3 install pipenv
 pipenv sync # install packages exactly as specified in Pipfile.lock
 pipenv shell # activate virtual environment
 
-# run luigi server
-luigid
-
-# optionally check embedding validation progress at `http://localhost:8082/`
 ```
 
 # 2. Install LaTeX packages for plot generation
