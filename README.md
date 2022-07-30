@@ -119,6 +119,14 @@ cd ../..
 
 Raw result files are stored in `experiments/*/results` folder. Current results are cached in Git, final tables and plots can be generated without full experiment run.
 
+The final results can be seen in the Jupyter notebooks. To run the notebooks with the required dependencies, the Jupyter server must be started inside the pipenv shell e. g.:
+```sh
+pipenv shell
+jupyter notebook
+```
+
+Here are the list of the notebooks with experiment results:
+
 [Tables from paper](experiments/notebooks/collect_tables.ipynb): tables 2, 3, 4, 5, 6, 7 from the paper that compare model quality metrics are produced by this notebook
 
 [RNN hidden size figures](experiments/notebooks/hidden_size_figures.ipynb): figure 3 from the paper is produced by this notebook
