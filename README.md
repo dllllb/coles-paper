@@ -117,9 +117,9 @@ cd ../..
 
 # 8. Experiment results
 
-Raw result files are stored in `experiments/*/results` folder. Current results are cached in Git, final tables and plots can be generated without full experiment run.
+Raw result files are stored in `experiments/*/results` folder. Current results are cached in this repositiry, final tables and plots can be generated without full experiment run.
 
-The final results can be seen in the Jupyter notebooks. To run the notebooks with the required dependencies, the Jupyter server must be started inside the pipenv shell e. g.:
+The final results can be seen in the Jupyter notebooks. To run the notebooks with the required dependencies in `PYTHONPATH`, the Jupyter notebook server must be started inside the pipenv shell e. g.:
 ```sh
 pipenv shell
 jupyter notebook
@@ -127,12 +127,14 @@ jupyter notebook
 
 Here are the list of the notebooks with experiment results:
 
-[Tables from paper](experiments/notebooks/collect_tables.ipynb): tables 2, 3, 4, 5, 6, 7 from the paper that compare model quality metrics are produced by this notebook
+[Tables from paper](experiments/notebooks/collect_tables.ipynb): `Tables 2, 3, 4, 5, 6, 7` from the paper that compare model quality metrics are produced by this notebook
 
-[RNN hidden size figures](experiments/notebooks/hidden_size_figures.ipynb): figure 3 from the paper is produced by this notebook
+[RNN hidden size figures](experiments/notebooks/hidden_size_figures.ipynb): `Figure 3` from the paper is produced by this notebook
 
-[Periodicity and repeatability of the data figures](experiments/notebooks/kl_cyclostationarity.ipynb): figure 2 from the paper is produced by this notebook
+[Periodicity and repeatability of the data figures](experiments/notebooks/kl_cyclostationarity.ipynb): `Figure 2` from the paper is produced by this notebook
 
-[Model quality for different dataset sizes figures](experiments/notebooks/semi_supervised_figures.ipynb): figure 4 from the paper is produced by this notebook
+[Periodicity and repeatability of the text](experiments/notebooks/kl_load_text_data.ipynb): `Figure 2d` from the paper is produced by this notebook
 
-Experiments on scoring dataset, shown in table 6, were performed on diffrent code base. They are not available in this repository. Experiments from table 11 were performed on in-house datasets. They are also not available in this repository.
+[Model quality for different dataset sizes figures](experiments/notebooks/semi_supervised_figures.ipynb): `Figure 4` from the paper is produced by this notebook
+
+Experiments on scoring dataset, shown in `Table 6`, were performed on diffrent code base. They are not available in this repository. Experiments from `Table 11` were performed on in-house datasets. They are also not available in this repository.
