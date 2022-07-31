@@ -428,10 +428,6 @@
             "index": "pypi",
             "version": "==0.17.1"
         },
-        "embeddings-validation": {
-            "path": ".",
-            "version": "==0.0.1"
-        },
         "entrypoints": {
             "hashes": [
                 "sha256:589f874b313739ad35be6e0cd7efde2a4e9b6fea91edcc34e58ecbb8dbe56d19",

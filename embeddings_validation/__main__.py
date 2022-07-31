@@ -23,7 +23,7 @@ if __name__ == '__main__':
     parser.add_argument('--conf', required=True)
     parser.add_argument('--split_only', action='store_true', required=False)
     parser.add_argument('--total_cpu_count', type=int, required=True)
-    parser.add_argument('--local_scheduler', action='store_true', required=False)
+    # parser.add_argument('--local_scheduler', action='store_true', required=False)
     parser.add_argument('--conf_extra', required=False)
     parser.add_argument('--log_level', default='INFO')
     args = parser.parse_args()
@@ -41,4 +41,4 @@ if __name__ == '__main__':
             conf=conf_file_name,
             total_cpu_count=args.total_cpu_count,
         )
-    luigi.build([task], workers=args.workers, local_scheduler=args.local_scheduler, log_level=args.log_level)
+    luigi.build([task], workers=args.workers, local_scheduler=True, log_level=args.log_level)
