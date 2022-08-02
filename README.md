@@ -133,4 +133,4 @@ Here are the list of the notebooks with experiment results:
 
 [Model quality for different dataset sizes figures](experiments/notebooks/semi_supervised_figures.ipynb): `Figure 4` from the paper is produced by this notebook
 
-Experiments on scoring dataset, shown in `Table 6`, were performed on diffrent code base. They are not available in this repository. Experiments from `Table 11` were performed on in-house datasets. They are also not available in this repository.
+Experiments on scoring dataset, shown in `Table 6`, were performed on different code base. They are not available in this repository. Experiments from `Table 11` were performed on in-house datasets. They are also not available in this repository.
